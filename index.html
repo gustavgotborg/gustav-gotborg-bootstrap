@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Laddar först in bootstrap sen egen css-->
+    <!--Laddar först in bootstrap sen egen css för att den ska redigera css koden efter bootstrap så att min överskrider bootstraps css-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -9,17 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="element.jpg">
-                <div class="card-body">
-                    <h1 class="card-title">Element</h1>
-                    <p class="card-text">Element definierar vad som ska hända med innehållet inom start och sluttaggen</p>
-                    <a href="#" class="btn btn-outline-secondary">Läs mer</a>
+
+    <div class="container-fluid"> <!-- Jag har valt att lägga alla korten i en container-fluid för att de ska ha ett samband och containern ska fylla ut hela hemsidan.-->
+    <div class="row padding"> <!-- För att skapa rader med kort och padding mellan raderna.-->
+        <div class="col-md-4"> <!-- För att anpassa sidan efter medium device samt inte få konstig fördelning av korten på sidan-->
+            <div class="card"> <!-- kort klassen för att lägga informationen på små kort-->
+                <img class="card-img-top" src="element.jpg"> <!-- För att få automatiskt snygg justering av bilden på kortet-->
+                <div class="card-body"> <!-- card-body class så att all text samt knappen ska anpassa sig automatiskt efter varandra-->
+                    <h1 class="card-title">Element</h1> <!-- titeln på kortet som berättar vilken info du kommer att få-->
+                    <p class="card-text">Element definierar vad som ska hända med innehållet inom start och sluttaggen</p> <!-- förklaringen i for av en sammanfattad paragraf-->
+                    <a href="https://www.w3schools.com/html/html_elements.asp" class="btn btn-outline-secondary">Läs mer</a> <!-- En knapp som tillåter dig att gå vidare till en annan hemsida där mer specifik info finns. btn-outline använder jag för att få en färdig outline som är grå istället för blå (primary)-->
                 </div>
-            </div>
+            </div>  <!-- koden är gjord på samma sätt för alla korten (olika länkar, bilder och text såklart)-->
         </div>
 
 
@@ -29,10 +30,10 @@
                     <div class="card-body">
                         <h1 class="card-title">HTML</h1>
                         <p class="card-text">Html är det språk (syntax) som är vanligast idag för att skapa webbsidor</p>
-                        <a href="https://www.youtube.com/?hl=sv&gl=SE" class="btn btn-outline-secondary">Läs mer</a>
+                        <a href="https://www.w3schools.com/html/" class="btn btn-outline-secondary">Läs mer</a>
                     </div>
                 </div>
-            </div>
+            </div> 
     
 
                 <div class="col-md-4">
@@ -41,29 +42,141 @@
                         <div class="card-body">
                             <h1 class="card-title">ID</h1>
                             <p class="card-text">Id ger html elementen ett specifikt id som tillåter dig att ändra saker för just det elementet </p>
-                            <a href="https://www.youtube.com/?hl=sv&gl=SE" class="btn btn-outline-secondary">Läs mer</a>
+                            <a href="https://www.w3schools.com/html/html_id.asp" class="btn btn-outline-secondary">Läs mer</a>
                         </div>
                     </div>
                 </div>
             
                 <div class="col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="id.jpg">
+                        <img class="card-img-top" src="class.jpg">
                         <div class="card-body">
                             <h1 class="card-title">CLASS</h1>
                             <p class="card-text">Class ger elementen en eller flera klasser för att lättare tilldela element en viss stylesheet kod </p>
-                            <a href="https://www.youtube.com/?hl=sv&gl=SE" class="btn btn-outline-secondary">Läs mer</a>
+                            <a href="https://www.w3schools.com/html/html_classes.asp" class="btn btn-outline-secondary">Läs mer</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card">
-                        <img class="card-img-top" src="id.jpg">
+                        <img class="card-img-top" src="meta.jpg">
                         <div class="card-body">
-                            <h1 class="card-title">CLASS</h1>
-                            <p class="card-text">Class ger elementen en eller flera klasser för att lättare tilldela element en viss stylesheet kod </p>
-                            <a href="https://www.youtube.com/?hl=sv&gl=SE" class="btn btn-outline-secondary">Läs mer</a>
+                            <h1 class="card-title">META</h1>
+                            <p class="card-text">Meta taggen tilldelar metadata (information om data) som handlar om ett html dokument</p>
+                            <a href="https://www.w3schools.com/tags/tag_meta.asp" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="responsive.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">Responsive</h1>
+                            <p class="card-text">En responsiv hemsida är en hemsida som ändrar storlek och layout automatiskt för att se bra ut på alla olika enheter</p>
+                            <a href="https://www.w3schools.com/html/html_responsive.asp" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="http.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">HTTP</h1>
+                            <p class="card-text">HTTP (HyperText Transfer Protocol) överför sidor från webb serverar till webbrowsern</p>
+                            <a href="https://www.w3schools.com/whatis/whatis_http.asp" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">HTTPS</h1>
+                            <p class="card-text">HTTPS fungerar som HTTP men krypterar innehållet på sidan</p>
+                            <a href="https://en.wikipedia.org/wiki/HTTPS" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="compressed.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">COMPRESSED DATA</h1>
+                            <p class="card-text">Compressed data innebär att man komprimerar filerna genom komprimerad kodning som kortar ner koden till väldigt få rader och på så vis gör filen mindre</p>
+                            <a href="https://en.wikipedia.org/wiki/Data_compression" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="cdn.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">CDN</h1>
+                            <p class="card-text">CDN (Content Delivery Network) är flera server utspridda på många ställen för att minska trafiken på hemsidan</p>
+                            <a href="https://developer.mozilla.org/en-US/docs/Glossary/CDN" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="bootstrap.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">LOCAL BOOTSTRAP</h1>
+                            <p class="card-text">Den lokala kopian av bootstrap som du laddar ner och länkar till i ditt html dokument. Det ger dig en färdig css som redan är anpassad för alla enheter</p>
+                            <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="jquery.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">JQUERY</h1>
+                            <p class="card-text">Ett bibliotek av javascript funktioner för hemsidor som förenklar användningen av animationer och andra javascript för webbutveckklare</p>
+                            <a href="https://www.w3schools.com/jquery/jquery_intro.asp" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="flexbox.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">FLEXBOX</h1>
+                            <p class="card-text">Flexbox används inom html för att på ett lätt sätt ordna föremål i rader och kolumner på hemsidan</p>
+                            <a href="https://www.w3schools.com/css/css3_flexbox.asp" class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="grid.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">GRID</h1>
+                            <p class="card-text">Grid används för att dela upp hemsidan i stora områden som sedan används för att göra det lättare när man ska bestämma positionering</p>
+                            <a href="https://www.w3schools.com/css/css_grid.asp " class="btn btn-outline-secondary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="codesnippets.jpg">
+                        <div class="card-body">
+                            <h1 class="card-title">CODE SNIPPETS</h1>
+                            <p class="card-text">Code snippets är delar av html kod som är lätta att återanvända i ditt egna projekt när du vill lägga till en speciell funktion. Istället för att skriva hela funktionens kod från början
+                                kan man istället återanvända färdiga delar av koden (Code snippets)
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/Snippet_(programming)" class="btn btn-outline-secondary">Läs mer</a>
                         </div>
                     </div>
                 </div>
