@@ -1,55 +1,20 @@
 body{
-  background-color: black;
+  background-color: black  ;
 }
 
-.container-fluid{ 
-text-align: center;
-background-color: black;
-padding-left: 0px;
-padding-right: 0px;
+img{ 
+  }
 
 }
 h1{
-  color: white;
+  color: rgb(14, 7, 7);
   
 }
 
 p{
-  color: white;
+  color: rgb(14, 10, 10);
 }
 
-
-::-webkit-scrollbar{
-  width: 0;
-}
-
-#scrollpath {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px; 
-  height: 100%;
-  background:rgba(255,255,255,0.05);
-}
-
-#progressbar{
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px; 
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7)
-      ;
-    animation: animate 5s linear infinite;
-}
-@keyframes animate
-{
-  0%,100%
-  {
-    filter: hue-rotate(0 deg);
-  }
-  50%
-  {
-    filter: hue-rotate(360 deg);
-  }
+.row{
+  padding: 20px;
 }
